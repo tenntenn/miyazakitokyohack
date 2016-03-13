@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <h2>心拍数</h2>
+    <form action="api/uploadheartbeat" method="post" enctype="multipart/form-data">
+      <input type="hidden" name="debug" value="true"></input>
+      <input type="text" name="date" value="20160312"></input>
+      <input type="file" name="file"></input>
+      <input type="submit" value="送信する"></input>
+    </form>
+
+    <h2>動画</h2>
+    <form action="api/uploadvideo" method="post" enctype="multipart/form-data">
+      <input type="hidden" name="debug" value="true"></input>
+      <input type="text" name="date" value="20160312"></input>
+      <input type="file" name="file"></input>
+      <input type="submit" value="送信する"></input>
+    </form>
+  </body>
+</html>
